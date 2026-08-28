@@ -24,4 +24,4 @@ jobs:
         run: npm install --global vercel@latest
 
       - name: Deploy to Vercel
-        run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }} --yes --scope=ckd8
+        run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }} --yes
