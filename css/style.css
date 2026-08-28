@@ -1260,3 +1260,56 @@ nav a.active {
     }
 
 }
+
+/* -----------------------------
+   CropCare Tip
+----------------------------- */
+
+.tip-section {
+    padding-top: 20px;
+}
+
+.tip-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 30px;
+    border-radius: 18px;
+    background: #f4f8f1;
+    border: 1px solid #dce8d6;
+}
+
+.tip-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.tip-content .eyebrow {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.tip-content h2 {
+    margin: 0 0 10px;
+}
+
+.tip-content p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .tip-card {
+        align-items: flex-start;
+        padding: 22px;
+        gap: 16px;
+    }
+
+    .tip-icon {
+        font-size: 2.2rem;
+    }
+
+}

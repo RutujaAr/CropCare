@@ -15,6 +15,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // -----------------------------
+    // CropCare Tips
+    // -----------------------------
+
+    const cropTip = document.getElementById("cropTip");
+
+    if (cropTip) {
+
+        const tips = [
+            "Monitor your crops regularly for unusual spots, discoloration, or other signs of disease.",
+            "Early observation can help identify crop problems before they spread across the field.",
+            "Avoid excessive moisture around plants because some diseases develop more easily under humid conditions.",
+            "Remove severely affected plant material where appropriate to help reduce the spread of disease.",
+            "Keep records of recurring crop disease problems to support better management decisions.",
+            "Healthy crop growth starts with regular observation, good field hygiene, and timely management."
+        ];
+
+        const randomTip =
+            tips[Math.floor(Math.random() * tips.length)];
+
+        cropTip.textContent = randomTip;
+    }
+
+
+    // -----------------------------
     // Featured Diseases
     // -----------------------------
 
