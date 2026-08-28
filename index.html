@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="CropCare - Crop disease information and management portal."
+    >
+
+    <title>CropCare | Crop Disease Information</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="index.html" class="logo">
+                🌾 CropCare
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <nav id="mainNav">
+                <a href="index.html" class="active">Home</a>
+                <a href="diseases.html">Diseases</a>
+                <a href="about.html">About</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Hero -->
+    <main>
+
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <span class="eyebrow">🌱 Agricultural Awareness</span>
+
+                    <h1>
+                        Know the Disease.<br>
+                        <span>Protect the Crop.</span>
+                    </h1>
+
+                    <p>
+                        CropCare is a simple educational portal that helps
+                        students and farmers explore crop diseases, symptoms,
+                        favorable conditions, and general management practices.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="diseases.html" class="btn btn-primary">
+                            Explore Diseases →
+                        </a>
+
+                        <a href="#crops" class="btn btn-secondary">
+                            Explore Crops
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="plant-card">
+                        <div class="plant-icon">🌾</div>
+
+                        <div>
+                            <span>CropCare</span>
+                            <strong>Healthy crops start with awareness.</strong>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-one">
+                        🔍 Search
+                    </div>
+
+                    <div class="floating-card floating-card-two">
+                        🛡️ Manage
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Crop Section -->
+        <section class="section" id="crops">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Browse</span>
+
+                    <h2>Explore by Crop</h2>
+
+                    <p>
+                        Select a crop to explore common diseases associated
+                        with it.
+                    </p>
+                </div>
+
+
+                <div class="crop-grid">
+
+                    <a href="diseases.html?crop=Sorghum" class="crop-card">
+                        <div class="crop-icon">🌾</div>
+                        <h3>Sorghum</h3>
+                        <p>Explore sorghum diseases</p>
+                        <span>View diseases →</span>
+                    </a>
+
+
+                    <a href="diseases.html?crop=Wheat" class="crop-card">
+                        <div class="crop-icon">🌾</div>
+                        <h3>Wheat</h3>
+                        <p>Explore wheat diseases</p>
+                        <span>View diseases →</span>
+                    </a>
+
+
+                    <a href="diseases.html?crop=Rice" class="crop-card">
+                        <div class="crop-icon">🌱</div>
+                        <h3>Rice</h3>
+                        <p>Explore rice diseases</p>
+                        <span>View diseases →</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Featured Diseases -->
+        <section class="section featured-section">
+
+            <div class="container">
+
+                <div class="section-heading heading-row">
+
+                    <div>
+                        <span class="eyebrow">Featured</span>
+                        <h2>Common Crop Diseases</h2>
+                    </div>
+
+                    <a href="diseases.html" class="view-all">
+                        View all →
+                    </a>
+
+                </div>
+
+
+                <div class="disease-grid" id="featuredDiseases">
+                    <!-- JavaScript inserts featured diseases -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Information Section -->
+        <section class="info-strip">
+
+            <div class="container info-strip-content">
+
+                <div>
+                    <span class="eyebrow">Learn. Understand. Manage.</span>
+
+                    <h2>
+                        Better awareness can support healthier crops.
+                    </h2>
+                </div>
+
+                <a href="about.html" class="btn btn-light">
+                    Learn About CropCare →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <a href="index.html" class="logo footer-logo">
+                    🌾 CropCare
+                </a>
+
+                <p>
+                    Crop Disease Information & Management Portal
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="diseases.html">Diseases</a>
+                <a href="about.html">About</a>
+            </div>
+
+        </div>
+
+        <div class="container copyright">
+            <p>
+                © 2026 CropCare. Educational agricultural information portal.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore crop diseases, symptoms, favorable conditions, management and prevention information."
+    >
+
+    <title>Diseases | CropCare</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="index.html" class="logo">
+                🌾 CropCare
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <nav id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="diseases.html" class="active">Diseases</a>
+                <a href="about.html">About</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- Page Header -->
+        <section class="page-header">
+
+            <div class="container">
+
+                <span class="eyebrow">Knowledge Center</span>
+
+                <h1>Crop Diseases</h1>
+
+                <p>
+                    Search and explore crop diseases along with their
+                    symptoms, favorable conditions, management and prevention.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Disease Explorer -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="explorer">
+
+                    <div class="search-wrapper">
+
+                        <label for="searchInput">
+                            Search diseases
+                        </label>
+
+                        <div class="search-box">
+                            <span>🔍</span>
+
+                            <input
+                                type="text"
+                                id="searchInput"
+                                placeholder="Search by disease name..."
+                                autocomplete="off"
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="filter-wrapper">
+
+                        <label for="cropFilter">
+                            Filter by crop
+                        </label>
+
+                        <select id="cropFilter">
+                            <option value="All">All Crops</option>
+                            <option value="Sorghum">Sorghum</option>
+                            <option value="Wheat">Wheat</option>
+                            <option value="Rice">Rice</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="results-info">
+                    <span id="resultsCount">Showing diseases</span>
+                </div>
+
+
+                <div class="disease-grid" id="diseaseContainer">
+                    <!-- JavaScript inserts diseases -->
+                </div>
+
+
+                <div id="noResults" class="no-results hidden">
+
+                    <div>🔎</div>
+
+                    <h3>No diseases found</h3>
+
+                    <p>
+                        Try another search term or select a different crop.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Details Modal -->
+        <div class="modal-overlay hidden" id="diseaseModal">
+
+            <div class="modal">
+
+                <button
+                    class="modal-close"
+                    id="modalClose"
+                    aria-label="Close disease details"
+                >
+                    ×
+                </button>
+
+                <div id="modalContent">
+                    <!-- JavaScript inserts details -->
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <a href="index.html" class="logo footer-logo">
+                    🌾 CropCare
+                </a>
+
+                <p>
+                    Crop Disease Information & Management Portal
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="diseases.html">Diseases</a>
+                <a href="about.html">About</a>
+            </div>
+
+        </div>
+
+        <div class="container copyright">
+            <p>
+                © 2026 CropCare. Educational agricultural information portal.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
